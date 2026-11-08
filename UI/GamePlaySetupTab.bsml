@@ -39,8 +39,8 @@
 		</vertical>
 	</modal>
 	
-	<modal move-to-center='true' show-event='ShowExtraSettings' hide-event='CloseExtraSettings' size-delta-x='80' size-delta-y='55'>
-		<vertical horizontal-fit='PreferredSize' vertical-fit='PreferredSize' pad-left='3' pad-right='3' child-expand-width='true' preferred-width='80' preferred-height='50'>
+	<modal move-to-center='true' show-event='ShowExtraSettings' hide-event='CloseExtraSettings' size-delta-x='80' size-delta-y='62'>
+		<vertical horizontal-fit='PreferredSize' vertical-fit='PreferredSize' pad-left='3' pad-right='3' child-expand-width='true' preferred-width='80' preferred-height='57'>
 			<horizontal pad-bottom='4' pad-top='1'>
 				<horizontal bg='panel-top-gradient'>
 					<text text="Ooh, I'm blinded by the lights - Extra Settings" align='Center' font-size='4'/>
@@ -51,6 +51,10 @@
 					<toggle-setting
 						text='Keep Ring Spins for Static lights' apply-on-change='true' value='keepRingSpinsInStatic'
 						hover-hint='Keeps stuff like ring spins and environment movements active for the static side'
+					/>
+					<toggle-setting
+						text='Static Spectrograms' apply-on-change='true' value='staticSpectrograms'
+						hover-hint='Stops things that react to the audio of the song for the static side. The game&apos;s own Static lights do not do this'
 					/>
 					<toggle-setting
 						text='Disable Back Lasers' bind-value='true' apply-on-change='true' value='disableBackLasers'

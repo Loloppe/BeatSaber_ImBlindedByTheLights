@@ -1,4 +1,5 @@
 using IPA.Utilities;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -11,6 +12,10 @@ namespace ImBlindedByTheLights.LightAdapters {
 
 		public static UnifiedDynamicRenderers Create(BufferedLightColorGroupEffectManager t) {
 			return new UnifiedDynamicRenderers(t.gameObject, FIELD_materialPropertyBlockControllers(ref t).SelectMany(x => x.renderers).ToArray());
+		}
+
+		public static UnifiedDynamicRenderers Create(GameObject gameObject, IEnumerable<Renderer> renderers) {
+			return new UnifiedDynamicRenderers(gameObject, renderers.ToArray());
 		}
 
 		Renderer[] renderers;

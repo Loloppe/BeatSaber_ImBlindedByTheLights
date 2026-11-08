@@ -31,6 +31,7 @@ Generally, this works with every environment, however on some there is issues wh
 ### Features
 
 - Option that allows you to keep Ring Spins active with Static lights
+- Option that also stops Spectrograms (Things reacting to the audio of the song), which the game's own Static lights do not do
 - Can define a custom static-color to use while keeping a different lighting preset active
 - Toggles to disable specific light types (Back Lasers, Ring Lights, Rotating Lasers, Center lights)
 

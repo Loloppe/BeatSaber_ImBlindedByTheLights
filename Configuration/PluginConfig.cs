@@ -17,6 +17,7 @@ namespace ImBlindedByTheLights {
 		public virtual bool staticWhenNoLights { get; set; } = true;
 
 		public virtual bool keepRingSpinsInStatic { get; set; } = false;
+		public virtual bool staticSpectrograms { get; set; } = false;
 		public virtual bool disableBackLasers { get; set; } = false;
 		public virtual bool disableRingLights { get; set; } = false;
 		public virtual bool disableRotatingLasers { get; set; } = false;
