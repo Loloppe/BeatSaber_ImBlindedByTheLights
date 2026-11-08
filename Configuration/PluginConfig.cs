@@ -9,6 +9,7 @@ namespace ImBlindedByTheLights {
 
 		public virtual bool enablePlugin { get; set; } = true;
 
+		public virtual bool useCustomStaticColor { get; set; } = false;
 		public virtual Color staticColor { get; set; } = Color.gray;
 
 		public virtual bool staticInHeadset { get; set; } = true;

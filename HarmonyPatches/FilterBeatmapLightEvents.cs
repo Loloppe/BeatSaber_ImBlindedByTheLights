@@ -42,6 +42,15 @@ namespace ImBlindedByTheLights.HarmonyPatches {
 
 			if(Config.Instance.staticWhenNoLights) {
 				foreach(var x in __result.allBeatmapDataItems) {
+					// Event boxes - V3 maps can have these, for V4 maps its the common case
+					if(x is LightColorBeatmapEventData lcbed) {
+						if(lcbed.brightness > 0 || (lcbed.strobeBeatFrequency > 0 && lcbed.strobeBrightness > 0)) {
+							endedUpWithAnyLights = true;
+							break;
+						}
+						continue;
+					}
+
 					if(!(x is BasicBeatmapEventData bbed))
 						continue;
 

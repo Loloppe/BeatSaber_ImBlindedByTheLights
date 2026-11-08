@@ -5,6 +5,9 @@
 				<toggle-setting value="enablePlugin" text="Enable Plugin" apply-on-change="true"
 					hover-hint='Quick Setting to toggle all plugin functionality'
 				/>
+				<toggle-setting value="useCustomStaticColor" text="Use custom Static color" apply-on-change="true"
+					hover-hint='By default the static side looks the same as the game&apos;s own Static lights'
+				/>
 				<color-setting value="staticColor" text="Static color" apply-on-change="true"/>
 				<toggle-setting value="staticInHeadset" text="Static in Headset" apply-on-change="true"/>
 				<toggle-setting value="staticOnDesktop" text="Static on Desktop" apply-on-change="true"/>
